@@ -3,14 +3,25 @@ import 'package:flutter/material.dart';
 class Navigationbuttons extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return Container ( 
+      decoration: BoxDecoration(
+            color: Colors.white,
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey.withOpacity(0.2),
+                blurRadius: 13,
+                offset: Offset(0, 13),
+              ),
+            ],
+          ),
+      child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
         Container(
-          margin: const EdgeInsets.only(top: 14),
+          
           width: 188,
           height: 56,
-          child: Text(
+          child: const Text(
             'Профиль',
             textAlign: TextAlign.center,
             style: TextStyle(
@@ -22,10 +33,9 @@ class Navigationbuttons extends StatelessWidget {
           ),
         ),
         Container(
-          margin: const EdgeInsets.only(top: 14),
           width: 188,
           height: 56,
-          child: Text(
+          child: const Text(
             'Настройки',
             textAlign: TextAlign.center,
             style: TextStyle(
@@ -37,6 +47,7 @@ class Navigationbuttons extends StatelessWidget {
         ),
         ),
       ],
+    ),
     );
   }
 }
