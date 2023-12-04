@@ -18,7 +18,7 @@ class Navigationbuttons extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
         Container(
-          
+          padding: EdgeInsets.only(top: 18, bottom: 18),
           width: 188,
           height: 56,
           child: const Text(
@@ -33,11 +33,12 @@ class Navigationbuttons extends StatelessWidget {
           ),
         ),
         Container(
+          padding: EdgeInsets.only(top: 18, bottom: 18),
           width: 188,
           height: 56,
           child: const Text(
             'Настройки',
-            textAlign: TextAlign.center,
+            textAlign: TextAlign.center,  
             style: TextStyle(
               color: Colors.grey,
               fontSize: 16,

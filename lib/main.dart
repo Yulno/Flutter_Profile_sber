@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_lab_1/body_section/bodysection.dart';
 import 'package:flutter_lab_1/top_section/topsection.dart';
 
 void main() {
@@ -13,11 +14,17 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Profile',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 255, 255, 255)),
+        colorScheme: ColorScheme.fromSeed(
+            seedColor: const Color.fromARGB(255, 255, 255, 255)),
         useMaterial3: true,
       ),
-      home: Topsection()
+      home: ListView(
+          children: [
+            Topsection(),
+            Bodysection(),
+          ],
+        ),
+    
     );
   }
 }
-
