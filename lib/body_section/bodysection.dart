@@ -8,7 +8,6 @@ import 'package:flutter_lab_1/body_section/choice3.dart';
 import 'package:flutter_lab_1/body_section/divider.dart';
 
 class Bodysection extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Container(

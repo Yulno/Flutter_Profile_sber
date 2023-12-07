@@ -7,7 +7,7 @@ class Interes extends StatelessWidget {
       children: [
         Container(
           width: 375,
-          padding: const EdgeInsets.only(top: 46, left: 16),
+          padding: const EdgeInsets.only(top: 46, left: 14),
           margin: const EdgeInsets.only(bottom: 16),
           child: const Column(
             crossAxisAlignment: CrossAxisAlignment.start,
