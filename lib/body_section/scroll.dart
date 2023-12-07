@@ -3,19 +3,22 @@ import 'package:flutter/material.dart';
 class Scrollview extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Row(
-      
-      children: [
+    return SingleChildScrollView(
+        scrollDirection: Axis.horizontal,
+        padding: const EdgeInsets.symmetric(vertical: 20),
+      child: 
+      Row(
+      children: [ 
         Container(
-          margin: EdgeInsets.only(left: 16, bottom: 46),
+          margin: const EdgeInsets.only(left: 16, right: 8),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.all(Radius.circular(12)),
+            borderRadius: const BorderRadius.all(Radius.circular(12)),
             color: Colors.white,
             boxShadow: [
               BoxShadow(
                 color: Colors.grey.withOpacity(0.5),
                 blurRadius: 13,
-                offset: Offset(0, 6),
+                offset: const Offset(0, 6),
               ),
             ],
           ),
@@ -50,12 +53,12 @@ class Scrollview extends StatelessWidget {
                   ),
                 ],
               ),
-              Align(
-                alignment: Alignment.topLeft,
-                child: Column(
-                  children: [
-                    Container(
-                      margin: const EdgeInsets.only(top: 24, bottom: 2),
+              Column(
+                children: [
+                  Align(
+                    alignment: Alignment.topLeft,
+                    child: Container(
+                      margin: const EdgeInsets.only(top: 22),
                       child: const Text(
                         'Платёж 9 июля',
                         textAlign: TextAlign.start,
@@ -67,34 +70,36 @@ class Scrollview extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Container(
+                  ),
+                  Align(
+                    alignment: Alignment.topLeft,
+                    child: Container(
                       child: const Text(
                         '199 ₽ в месяц',
                         textAlign: TextAlign.start,
                         style: TextStyle(
-                          color: Colors.grey,
+                          color: Color(0x8C000000),
                           fontSize: 14,
                           fontFamily: 'SF Pro Display',
                           fontWeight: FontWeight.w500,
                         ),
                       ),
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ],
           ),
         ),
         Container(
-          margin: EdgeInsets.only(left: 16, bottom: 46),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.all(Radius.circular(12)),
+            borderRadius: const BorderRadius.all(Radius.circular(12)),
             color: Colors.white,
             boxShadow: [
               BoxShadow(
                 color: Colors.grey.withOpacity(0.5),
                 blurRadius: 13,
-                offset: Offset(0, 6),
+                offset: const Offset(0, 6),
               ),
             ],
           ),
@@ -129,12 +134,12 @@ class Scrollview extends StatelessWidget {
                   ),
                 ],
               ),
-              Align(
-                alignment: Alignment.topLeft,
-                child: Column(
-                  children: [
-                    Container(
-                      margin: const EdgeInsets.only(top: 24, bottom: 2),
+              Column(
+                children: [
+                  Align(
+                    alignment: Alignment.topLeft,
+                    child: Container(
+                      margin: const EdgeInsets.only(top: 22),
                       child: const Text(
                         'Автопродление 21 августа',
                         textAlign: TextAlign.start,
@@ -146,25 +151,30 @@ class Scrollview extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Container(
+                  ),
+                  Align(
+                    alignment: Alignment.topLeft,
+                    child: Container(
                       child: const Text(
                         '199 ₽ в месяц',
                         textAlign: TextAlign.start,
                         style: TextStyle(
-                          color: Colors.grey,
+                          color: Color(0x8C000000),
                           fontSize: 14,
                           fontFamily: 'SF Pro Display',
                           fontWeight: FontWeight.w500,
                         ),
                       ),
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ],
           ),
         ),
       ],
+      ),
+      
     );
   }
 }

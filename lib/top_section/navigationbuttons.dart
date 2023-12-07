@@ -40,7 +40,7 @@ class Navigationbuttons extends StatelessWidget {
             'Настройки',
             textAlign: TextAlign.center,  
             style: TextStyle(
-              color: Colors.grey,
+              color: Color(0x8C000000),
               fontSize: 16,
               fontFamily: 'SF Pro Display',
             fontWeight: FontWeight.w500,

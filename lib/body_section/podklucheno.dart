@@ -11,7 +11,7 @@ class Podklucheno extends StatelessWidget {
             alignment: Alignment.topLeft,
             child: Container(
               margin: const EdgeInsets.only(
-                  top: 30, left: 14, right: 14, bottom: 8),
+                  top: 30, left: 16, right: 16, bottom: 8),
               child: const Text(
                 'У вас подключено',
                 textAlign: TextAlign.start,
@@ -27,12 +27,12 @@ class Podklucheno extends StatelessWidget {
           Align(
             alignment: Alignment.topLeft,
             child: Container(
-              margin: const EdgeInsets.only(left: 14, right: 14, bottom: 20),
+              margin: const EdgeInsets.only(left: 16, right: 16, bottom: 4),
               child: const Text(
                 'Подписки, автоплатежи и сервисы, на которые вы подписались',
                 textAlign: TextAlign.start,
                 style: TextStyle(
-                  color: Colors.grey,
+                  color: Color(0x8C000000),
                   fontSize: 14,
                   fontFamily: 'SF Pro Display',
                   fontWeight: FontWeight.w500,

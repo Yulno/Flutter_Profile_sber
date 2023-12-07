@@ -13,15 +13,12 @@ class Appbar extends StatelessWidget {
           children: [
             Container(
               margin: const EdgeInsets.only(left: 16),
-              width: 24,
-              height: 24,
-              child: Image.asset('images/close.png'),
+          
+              child: const Icon(Icons.close, size: 24, color: Colors.green),
             ),
             Container(
               margin: const EdgeInsets.only(right: 16),
-              width: 24,
-              height: 24,
-              child: Image.asset('images/open.png'),
+              child: const Icon(Icons.input, size: 24, color: Colors.green),
             ),
           ],
         ),
