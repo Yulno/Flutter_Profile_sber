@@ -1,16 +1,13 @@
 # flutter_lab_1
 
-A new Flutter project.
+Работала в Visual Studio Code.
+Проект запускался на реальном устройстве.
 
-## Getting Started
+Работа велась сначала в ветке main, потом в новой ветке branch.
 
-This project is a starting point for a Flutter application.
+Код каждого из элементов в отдельных файлах, которые разбиты по папкам: top_section, body_section, bottom_section 
 
-A few resources to get you started if this is your first Flutter project:
+Страница скроллится, карточки горизонтально скроллятся. Тени у аватара, под шапкой профиля и у карточек. Кнопки верхней навигации и кнопки меню имеют ховер эффект.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![image alt](https://github.com/Yulno/Flutter_Profile_sber/blob/branch/Buttons.jpg)
+![image alt](https://github.com/Yulno/Flutter_Profile_sber/blob/branch/FullScreen.jpg)
