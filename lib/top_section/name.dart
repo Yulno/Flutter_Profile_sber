@@ -11,6 +11,7 @@ class Name extends StatelessWidget {
         style: TextStyle(
           color: Colors.black,
           fontSize: 24,
+          
           fontFamily: 'SF Pro Display',
           fontWeight: FontWeight.w700,
         ),

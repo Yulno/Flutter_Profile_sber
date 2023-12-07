@@ -12,13 +12,18 @@ class Appbar extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Container(
-              margin: const EdgeInsets.only(left: 16),
-          
-              child: const Icon(Icons.close, size: 24, color: Colors.green),
+              margin: const EdgeInsets.only(left: 3),
+              child: IconButton(
+                icon: const Icon(Icons.close, size: 24, color: Colors.green),
+                onPressed: () {},
+              ),
             ),
             Container(
-              margin: const EdgeInsets.only(right: 16),
-              child: const Icon(Icons.input, size: 24, color: Colors.green),
+              margin: const EdgeInsets.only(right: 8),
+              child: IconButton(
+                icon: const Icon(Icons.input, size: 24, color: Colors.green),
+                onPressed: () {},
+              ),
             ),
           ],
         ),

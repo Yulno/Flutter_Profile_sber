@@ -10,7 +10,7 @@ class Podklucheno extends StatelessWidget {
           Align(
             alignment: Alignment.topLeft,
             child: Container(
-              margin: const EdgeInsets.only(
+              padding: const EdgeInsets.only(
                   top: 30, left: 16, right: 16, bottom: 8),
               child: const Text(
                 'У вас подключено',
