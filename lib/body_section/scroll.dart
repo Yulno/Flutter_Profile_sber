@@ -91,6 +91,7 @@ class Scrollview extends StatelessWidget {
             ),
           ),
           Container(
+            margin: const EdgeInsets.only(right: 8),
             decoration: BoxDecoration(
               borderRadius: const BorderRadius.all(Radius.circular(12)),
               color: Colors.white,
